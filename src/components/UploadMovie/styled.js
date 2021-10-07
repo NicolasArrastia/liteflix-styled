@@ -12,9 +12,11 @@ export const UploadCont = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
-    
-    
-    visibility: ${({visible}) => visible?'visible':'hidden'};
+
+
+    visibility: ${({visible}) => visible ? 'visible' : 'hidden' };
+
+
     justify-content: center;
     align-items: center;
     background-color: #000a;
@@ -27,7 +29,7 @@ export const Window = styled.div`
     justify-content: flex-start;
     align-content: center;
     width: clamp(400px, 75%, 800%);
-    padding: 30px 60px;
+    padding: 30px 5%;
     background-color: #242424;
     @media (max-width:576px){
         width: 100%;

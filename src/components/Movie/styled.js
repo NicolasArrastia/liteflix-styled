@@ -34,10 +34,15 @@ export const MovieContainer = styled.div`
             >:nth-child(1){
                 position: absolute;
                 left: 5%;
+                transform: scale(1.2);
             }
             >:nth-child(2){
                 position: relative;
                 bottom: 0;
+                font-size: 2.5rem;
+                width: 50%;
+                border: 1px solid red;
+                text-align: center;
             }
             animation: ${Appear} 1s ease-in;
         }
@@ -110,10 +115,10 @@ export const MovieTitle = styled.div`
     display: inline-block;
     font-size: 2rem;
     opacity: 1;
-    max-width: 60%;
+    max-width: 70%;
     /* border: 1px solid red; */
     transition: 0.5s ease-out;
     @media (max-width: 576px){
-        font-size: 2.5rem;
+        /* font-size: 2.5rem; */
     }
 `;

@@ -23,6 +23,7 @@ export const MovieTitle = styled.div`
     color: aqua;
     font-weight: 700;
     letter-spacing: 0.7rem;
+    text-align: center;
 `;
 
 export const BtnContainer = styled.div`

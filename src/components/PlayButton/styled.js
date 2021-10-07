@@ -29,7 +29,4 @@ export const PlayCont = styled.div`
         stroke: white;
         left: 1px;
     }
-    @media (max-width: 576px){
-        transform: scale(1.5);
-    }
 `;

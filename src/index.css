@@ -70,6 +70,6 @@ main{
   }
 }
 
-.hidden{
-  display: none;
+.visible{
+  visibility: visible;
 }

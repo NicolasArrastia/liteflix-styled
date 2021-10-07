@@ -67,6 +67,7 @@ export default function MyDropzone(props) {
         e.preventDefault()
         const el=document.getElementById('upload_movie')
         el.removeAttribute('visible')
+        // el.classList.toggle('visible')
         // el.setAttribute('visible','')
         console.log(el);
         // Because the user is closing the window and do not want to save a movie
@@ -75,7 +76,7 @@ export default function MyDropzone(props) {
     }
 
     return (
-        <UploadCont id="upload_movie" visible="false">
+        <UploadCont id="upload_movie">
             <Window>
                 <Header>
                     <Liteflix></Liteflix>
