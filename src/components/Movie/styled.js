@@ -41,7 +41,6 @@ export const MovieContainer = styled.div`
                 bottom: 0;
                 font-size: 2.5rem;
                 width: 50%;
-                border: 1px solid red;
                 text-align: center;
             }
             animation: ${Appear} 1s ease-in;

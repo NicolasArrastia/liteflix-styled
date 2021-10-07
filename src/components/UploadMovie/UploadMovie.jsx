@@ -66,11 +66,11 @@ export default function MyDropzone(props) {
     function closeWindow (e){
         e.preventDefault()
         const el=document.getElementById('upload_movie')
-        el.removeAttribute('visible')
-        // el.classList.toggle('visible')
-        // el.setAttribute('visible','')
-        console.log(el);
-        // Because the user is closing the window and do not want to save a movie
+        el.style.visibility = 'hidden'
+        const main=document.getElementById('main')
+        main.style.overflow = 'visible'
+
+        // Because the user is closing the window and don't want to save a movie
         setImage('');
         setLoading(0)
     }

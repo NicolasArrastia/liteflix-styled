@@ -5,7 +5,7 @@ import { LiteflixStyled, Lite, Flix } from './styled'
 
 export default function Liteflix(props) {
     return (
-        <LiteflixStyled href="google.com">
+        <LiteflixStyled href="/">
             <Lite>Lite</Lite>
             <Flix>flix</Flix>
         </LiteflixStyled>

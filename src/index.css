@@ -36,7 +36,7 @@ code {
   list-style: none;
 }
 
-main{
+#main{
   z-index: 6000;
   position: absolute;
   top: 0;
@@ -53,10 +53,12 @@ main{
   padding: 10px 5% 0;
 }
 @media (max-width:576px){
-  main{
+  #main{
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 200px;
+
+    overflow: visible;
   }
 }
 
@@ -68,8 +70,4 @@ main{
     right: 0;
     left: 0;
   }
-}
-
-.visible{
-  visibility: visible;
 }

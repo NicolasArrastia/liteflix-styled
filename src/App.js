@@ -39,7 +39,7 @@ export default function App() {
     <>
         <Header/>
         <Background image={movieImage} name={movieTitle} />
-        <main>
+        <main id="main">
           <MainMovie movieTitle={movieTitle}></MainMovie>
           <MovieList></MovieList>
         </main>

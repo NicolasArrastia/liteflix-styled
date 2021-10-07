@@ -12,14 +12,12 @@ export const UploadCont = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
-
-
-    visibility: ${({visible}) => visible ? 'visible' : 'hidden' };
-
-
     justify-content: center;
     align-items: center;
     background-color: #000a;
+    
+    /* By default we want this to be hidden */
+    visibility: hidden;
 `;
 
 export const Window = styled.div`
@@ -74,7 +72,6 @@ export const DropzoneCont = styled.div`
 
     margin: 0 auto 40px;
 
-    /* background-color: #f003; */
     width: clamp(250px,100%,500px);
     >img{
         margin-right: 5px;
@@ -127,7 +124,6 @@ export const CloseWinIcon = styled.div`
         background-color: #f008;
         transition: 0.2s ease;
     }
-    /* background-color: red; */
 `;
 
 export const CrossIcon = styled(PlusIcon)`
