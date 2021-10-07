@@ -59,12 +59,12 @@ export default function MyDropzone(props) {
                 movieList.push(movie);
                 localStorage.setItem('movies',JSON.stringify(movieList))
                 alert('pelicula subida con éxito')
+                closeWindow()
             }
         }
     }
 
-    function closeWindow (e){
-        e.preventDefault()
+    function closeWindow (){
         const el=document.getElementById('upload_movie')
         el.style.visibility = 'hidden'
         const main=document.getElementById('main')
@@ -82,7 +82,7 @@ export default function MyDropzone(props) {
                     <Liteflix></Liteflix>
                     <Profile></Profile>
                 </Header>
-                <CloseWinIcon onClick={closeWindow}>
+                <CloseWinIcon onClick={()=>closeWindow()}>
                     <CrossIcon scale="0.7"/>
                 </CloseWinIcon>
                 <WinTitle>Agregar película</WinTitle>
@@ -98,7 +98,7 @@ export default function MyDropzone(props) {
                 }
                 <WinInput id="movie_title" type="text" placeholder="título"></WinInput>
                 <WinBtn onClick={sendMovie}>Subir película</WinBtn>
-                <WinBtn onlyPhone onClick={closeWindow}>Salir</WinBtn>
+                <WinBtn onlyPhone onClick={()=>closeWindow()}>Salir</WinBtn>
             </Window>
         </UploadCont>
     )
